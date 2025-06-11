@@ -1,3 +1,6 @@
+![MIT License](https://img.shields.io/badge/license-MIT-blue)
+![Built with LangChain](https://img.shields.io/badge/Built%20with-LangChain-4b7bec)
+![Offline AI](https://img.shields.io/badge/LLM-Ollama-green)
 
 # 🧠 AI Knowledge Bot
 
