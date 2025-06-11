@@ -167,15 +167,15 @@ So I switched to:
 
 Build and run the app securely using a **multi-stage Dockerfile**:
 
-### 1. Build the container
+ 1. Build the container
 
 ```bash
 docker build -t ai-knowledge-bot .
 
----
+
 
 2. Run the container
-Make sure Ollama is running on the host, then:
+Make sure Ollama is running on the host, open up a powershell or in different terminal then:
 
 docker run -p 8501:8501 \
   --add-host=host.docker.internal:host-gateway \
@@ -194,7 +194,7 @@ docker run -p 8501:8501 \
 
 ✅ Automatically starts Streamlit app
 
-
+---
 ## 💬 License
 
 MIT — feel free to fork, use, or improve it.
@@ -204,8 +204,6 @@ MIT — feel free to fork, use, or improve it.
 ## 🔥 Built by EzioDEVio | 🇮🇶 | 🧠
 
 From concept to offline AI — all step by step.
-
-```
 
 ---
 
