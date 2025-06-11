@@ -1,0 +1,42 @@
+# Python virtual environment
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pdb
+
+# Environment/config. I kept .env  file since  it is not containg any keys or sensetives
+.env
+*.env
+
+# Streamlit generated files
+.streamlit/
+
+# Jupyter/VSCode files (if used)
+.ipynb_checkpoints/
+.vscode/
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+
+# Model weights or large files (optional)
+*.bin
+*.ckpt
+*.pt
+*.onnx
+
+# Ollama cache (optional: models pulled locally)
+~/.ollama/
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Output artifacts
+chat_history.json
