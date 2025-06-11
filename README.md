@@ -2,7 +2,7 @@
 ![Built with LangChain](https://img.shields.io/badge/Built%20with-LangChain-4b7bec)
 ![Offline AI](https://img.shields.io/badge/LLM-Ollama-green)
 ![last commit](https://img.shields.io/github/last-commit/EzioDEVio/ai-knowledge-bot?color=blue)
-![repo size](https://img.shields.io/github/repo-size/EzioDEVio/ai-knowledge-bot
+![repo size](https://img.shields.io/github/repo-size/EzioDEVio/ai-knowledge-bot)
 ![GitHub issues](https://img.shields.io/github/issues/EzioDEVio/ai-knowledge-bot)
 ![Forks](https://img.shields.io/github/forks/EzioDEVio/ai-knowledge-bot?style=social)
 ![Stars](https://img.shields.io/github/stars/EzioDEVio/ai-knowledge-bot?style=social)
