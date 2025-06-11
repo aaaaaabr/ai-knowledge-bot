@@ -159,7 +159,6 @@ So I switched to:
 * ✅ JSON export
 * ✅ 100% offline functionality
 
----
 
 ---
 
@@ -180,7 +179,7 @@ Make sure Ollama is running on the host, open up a powershell or in different te
 docker run -p 8501:8501 \
   --add-host=host.docker.internal:host-gateway \
   ai-knowledge-bot
-
+---
 ## 🔐 Dockerfile Security Highlights
 ✅ Multi-stage build (separates dependencies from runtime)
 
