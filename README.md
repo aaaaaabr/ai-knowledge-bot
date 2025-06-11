@@ -170,7 +170,7 @@ Build and run the app securely using a **multi-stage Dockerfile**:
 
 ```bash
 docker build -t ai-knowledge-bot .
-
+```
 
 
 2. Run the container
